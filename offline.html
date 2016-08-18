@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+    html, body{
+      background: #f7f7f7;
+      color: #333;
+      margin:0;
+      font-family: 'Helvetica Neue', Helvetica;
+    } 
+    body{
+      max-width:80%;
+      margin:auto;
+      font-size:.9em;
+      margin-top:5em;
+    }
+    h1{
+      font-weight:normal;
+      font-size:1.6em;
+    }
+    p, ul{
+      line-height: 1.5;
+    }
+    .err{
+      color:#b0b0b0;
+      font-size:.8em;
+      letter-spacing:.025em;
+    }
+    .dinosaur{
+      position:relative;
+      height:50px;
+      width:50px;
+      border: 1px solid red;
+    }
+    .dinosaur:after{
+      content:'';
+      display:block;
+      box-shadow: 546px 63px 0 #535353,525px 42px 0 #535353,525px 63px 0 #535353,546px 84px 0 #535353,546px 105px 0 #535353,546px 126px 0 #535353,504px 42px 0 #535353,483px 42px 0 #535353,462px 42px 0 #535353,441px 42px 0 #535353,420px 42px 0 #535353,399px 42px 0 #535353,546px 147px 0 #535353,525px 147px 0 #535353,504px 147px 0 #535353,378px 42px 0 #535353,378px 63px 0 #535353,357px 63px 0 #535353,357px 84px 0 #535353,357px 105px 0 #535353,399px 63px 0 #535353,378px 84px 0 #535353,399px 105px 0 #535353,378px 105px 0 #535353,420px 84px 0 #535353,420px 63px 0 #535353,441px 63px 0 #535353,462px 63px 0 #535353,483px 63px 0 #535353,504px 63px 0 #535353,441px 84px 0 #535353,420px 105px 0 #535353,441px 105px 0 #535353,462px 105px 0 #535353,462px 84px 0 #535353,483px 105px 0 #535353,483px 84px 0 #535353,504px 84px 0 #535353,504px 105px 0 #535353,525px 105px 0 #535353,525px 84px 0 #535353,483px 147px 0 #535353,462px 147px 0 #535353,441px 147px 0 #535353,420px 147px 0 #535353,420px 168px 0 #535353,420px 189px 0 #535353,441px 189px 0 #535353,462px 189px 0 #535353,483px 189px 0 #535353,504px 189px 0 #535353,525px 126px 0 #535353,504px 126px 0 #535353,483px 126px 0 #535353,462px 126px 0 #535353,441px 126px 0 #535353,420px 126px 0 #535353,399px 126px 0 #535353,378px 126px 0 #535353,357px 126px 0 #535353,441px 168px 0 #535353,399px 189px 0 #535353,399px 210px 0 #535353,399px 231px 0 #535353,399px 252px 0 #535353,420px 252px 0 #535353,441px 252px 0 #535353,441px 273px 0 #535353,357px 147px 0 #535353,357px 168px 0 #535353,357px 189px 0 #535353,336px 189px 0 #535353,336px 210px 0 #535353,315px 210px 0 #535353,294px 231px 0 #535353,210px 294px 0 #535353,189px 294px 0 #535353,168px 294px 0 #535353,147px 273px 0 #535353,147px 294px 0 #535353,273px 252px 0 #535353,252px 273px 0 #535353,399px 273px 0 #535353,399px 294px 0 #535353,399px 315px 0 #535353,378px 147px 0 #535353,399px 168px 0 #535353,378px 168px 0 #535353,399px 147px 0 #535353,378px 189px 0 #535353,378px 210px 0 #535353,357px 210px 0 #535353,378px 231px 0 #535353,357px 231px 0 #535353,378px 315px 0 #535353,378px 336px 0 #535353,357px 336px 0 #535353,357px 357px 0 #535353,357px 378px 0 #535353,336px 378px 0 #535353,336px 399px 0 #535353,336px 420px 0 #535353,336px 441px 0 #535353,336px 462px 0 #535353,315px 399px 0 #535353,315px 378px 0 #535353,294px 378px 0 #535353,273px 399px 0 #535353,273px 378px 0 #535353,231px 420px 0 #535353,252px 420px 0 #535353,252px 399px 0 #535353,231px 441px 0 #535353,252px 462px 0 #535353,357px 462px 0 #535353,231px 462px 0 #535353,231px 399px 0 #535353,210px 399px 0 #535353,189px 378px 0 #535353,168px 357px 0 #535353,147px 336px 0 #535353,147px 315px 0 #535353,168px 315px 0 #535353,168px 336px 0 #535353,189px 357px 0 #535353,210px 378px 0 #535353,231px 378px 0 #535353,252px 378px 0 #535353,210px 357px 0 #535353,189px 336px 0 #535353,210px 336px 0 #535353,231px 336px 0 #535353,252px 336px 0 #535353,273px 336px 0 #535353,294px 336px 0 #535353,315px 315px 0 #535353,336px 315px 0 #535353,336px 336px 0 #535353,315px 336px 0 #535353,336px 357px 0 #535353,315px 357px 0 #535353,294px 357px 0 #535353,273px 357px 0 #535353,252px 357px 0 #535353,231px 357px 0 #535353,189px 315px 0 #535353,210px 315px 0 #535353,231px 315px 0 #535353,252px 315px 0 #535353,273px 315px 0 #535353,294px 315px 0 #535353,357px 315px 0 #535353,357px 294px 0 #535353,357px 273px 0 #535353,357px 252px 0 #535353,378px 252px 0 #535353,378px 273px 0 #535353,378px 294px 0 #535353,231px 294px 0 #535353,252px 294px 0 #535353,273px 294px 0 #535353,294px 294px 0 #535353,315px 294px 0 #535353,336px 294px 0 #535353,336px 231px 0 #535353,336px 252px 0 #535353,336px 273px 0 #535353,315px 231px 0 #535353,315px 252px 0 #535353,294px 252px 0 #535353,294px 273px 0 #535353,273px 273px 0 #535353,315px 273px 0 #535353,168px 273px 0 #535353,147px 252px 0 #535353,147px 231px 0 #535353,189px 273px 0 #535353,168px 252px 0 #535353,147px 210px 0 #535353;
+      transform:scale(.1) translate(-250px, -100px);
+      height: 21px;
+      width: 21px;
+    }
+  </style>
+</head>
+<body>
+  <div class='game'>
+    <div class='dinosaur'></div>
+  </div>
+  <h1>There is no Internet connection</h1>
+  <p>You can try to diagnose the problem by taking the following steps:<br>
+  Go to <strong>Applications > System Preferences > Network > Assist me</strong>
+  to test your connection.</p>
+
+  Try:
+  <ul>
+    <li>Checking the network cable or router</li>
+    <li>Resetting the modem or router</li>
+    <li>Reconnecting to Wi-Fi</li>
+  </ul>
+  <div class='err'>ERR_INTERNET_DISCONNECTED</div>
+</body>
+</html>
